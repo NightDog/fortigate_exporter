@@ -128,6 +128,7 @@ func (p *ProbeCollector) Probe(ctx context.Context, target string, hc *http.Clie
 		{"System/Status", probeSystemStatus},
 		{"System/VDOMResources", probeSystemVDOMResources},
 		{"System/HAChecksum", probeSystemHAChecksum},
+		{"SwitchController/ManageSwitch/PortStats", probeSwitchPortStats},
 		{"User/Fsso", probeUserFsso},
 		{"VPN/IPSec", probeVPNIPSec},
 		{"VPN/Ssl/Connections", probeVPNSsl},
